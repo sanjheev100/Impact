@@ -18,7 +18,7 @@ app.use(
       const { name, email, phone, description } = req.body
       let messagecontent =
         'Hello User <br/>' +
-        '<p>You Have received new request in antiquity from </p> <br/>' +
+        '<p>You Have received new request in Impact enterprise from </p> <br/>' +
         '<strong>Name: </strong>' +
         name +
         '<br/>' +

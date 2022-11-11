@@ -46,7 +46,21 @@ export default ({
       <wbr /> with us.
     </>
   ),
-  description = 'You have big goals. We have the expertise to help you reach them.',
+  description = (
+    <>
+      You have big goals. We have the expertise to help you reach them.
+      <br />
+      <br />
+      <p>
+        <strong>Address</strong> : 8,The Green Suite A,Dover 19901
+      </p>
+      <br />
+      <p>
+        <strong>Email </strong>:
+        contact@impactenterprisearchitecturalservices.com
+      </p>
+    </>
+  ),
   submitButtonText = 'Contact Me',
   // formAction = '#',
   // formMethod = 'get',
@@ -174,15 +188,6 @@ export default ({
               />
               <br />
               <br />
-              {/* <SubmitButton
-                disabled={
-                  !name || !phone || !email || !descriptionForm || loading
-                }
-                type='submit'
-                stu
-              >
-                {submitButtonText}
-              </SubmitButton> */}
               <button
                 style={{
                   backgroundColor: '#4CAF50',
@@ -195,6 +200,9 @@ export default ({
                   fontSize: '16px',
                 }}
                 type='submit'
+                disabled={
+                  !name || !email || !phone || !descriptionForm || loading
+                }
               >
                 Contact us
               </button>
